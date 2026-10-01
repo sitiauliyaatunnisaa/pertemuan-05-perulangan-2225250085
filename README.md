@@ -43,3 +43,20 @@ python3 kuis/kuis2_deret_aritmetika.py
 Kesalahan yang ditemukan adalah menempatkan `total = 0` di dalam perulangan. Jika `total = 0` berada di dalam loop, nilai total akan kembali menjadi 0 pada setiap iterasi sehingga jumlah seluruh suku tidak dapat terakumulasi dengan benar.
 
 Kesalahan tersebut diperbaiki dengan menempatkan `total = 0` sebelum perulangan dimulai.
+
+## Refleksi Teknis
+
+1. **Bagian mana yang menentukan jumlah iterasi?**  
+   Jumlah iterasi ditentukan oleh nilai `n` pada `range(n)`. Jika `n` bernilai 5, maka perulangan `for` akan berjalan sebanyak 5 kali.
+
+2. **Mengapa `total` harus diinisialisasi sebelum loop?**  
+   `total` harus diinisialisasi sebelum loop agar memiliki nilai awal sebagai tempat menyimpan hasil penjumlahan setiap suku yang diproses selama perulangan.
+
+3. **Apa akibatnya jika `total = 0` ditempatkan di dalam loop?**  
+   Jika `total = 0` ditempatkan di dalam loop, nilai `total` akan kembali menjadi 0 pada setiap iterasi. Akibatnya, hasil penjumlahan sebelumnya hilang dan jumlah akhir menjadi tidak benar.
+
+4. **Mengapa validasi `n` lebih sesuai menggunakan `while`?**  
+   `while` lebih sesuai karena jumlah percobaan memasukkan nilai `n` yang benar belum diketahui. Perulangan dapat terus dilakukan selama `n` masih kurang dari atau sama dengan 0 dan berhenti setelah pengguna memasukkan nilai positif.
+
+5. **Bagaimana Anda membuktikan bahwa loop berhenti tepat?**  
+   Perulangan `for` berhenti setelah jumlah iterasi mencapai `n` karena menggunakan `range(n)`. Pada validasi `while`, perulangan berhenti ketika nilai `n` sudah lebih besar dari 0. Dengan demikian, setiap loop memiliki kondisi berhenti yang jelas.
