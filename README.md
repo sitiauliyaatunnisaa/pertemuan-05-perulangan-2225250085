@@ -43,11 +43,3 @@ python3 kuis/kuis2_deret_aritmetika.py
 Kesalahan yang ditemukan adalah menempatkan `total = 0` di dalam perulangan. Jika `total = 0` berada di dalam loop, nilai total akan kembali menjadi 0 pada setiap iterasi sehingga jumlah seluruh suku tidak dapat terakumulasi dengan benar.
 
 Kesalahan tersebut diperbaiki dengan menempatkan `total = 0` sebelum perulangan dimulai.
-
-### Refleksi Teknis
-
-1. Jumlah iterasi ditentukan oleh `range(n)` pada perulangan `for`.
-2. `total` diinisialisasi sebelum loop agar dapat digunakan sebagai akumulator untuk menjumlahkan semua suku.
-3. Jika `total = 0` diletakkan di dalam loop, hasil penjumlahan akan direset pada setiap iterasi.
-4. Validasi `n` menggunakan `while` karena program perlu terus meminta input sampai pengguna memasukkan nilai yang positif.
-5. Loop berhenti tepat karena `range(n)` menghasilkan tepat `n` kali iterasi.
