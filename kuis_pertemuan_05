@@ -1,0 +1,41 @@
+Nama	: Siti Auliyaatunnisaa
+NIM	: 2225250085
+Kelas	: 3A
+
+
+KUIS FORMATIF
+
+1.	Apa keluaran list (range(1, 6))?
+Jawab: hasilnya [1, 2, 3, 4, 5]
+
+2.	Mengapa range (1, 10) tidak menghasilkan 10?
+Jawab: Karena nilai batas akhir pada range() tidak termasuk. Jadi range(1, 10) menghasilkan angka 1 sampai 9.
+
+3.	Kapan for lebih sesuai daripada while?
+Jawab: for lebih sesuai ketika jumlah perulangan sudah diketahui atau dapat ditentukan, misalnya mengulang 10 kali.
+
+4.	Sebutkan tiga komponen utama yang harus diperiksa pada while.
+Jawab: Kondisi perulangan, Perubahan nilai yang memengaruhi kondisi, Kondisi berhenti agar loop tidak menjadi infinite loop.
+
+5.	Apa penyebab paling umum infinite loop?
+Jawab: Kondisi while tidak pernah menjadi False, biasanya karena variabel yang digunakan dalam kondisi tidak diperbarui dengan benar.
+
+6.	Apa nilai akhir total setelah menjumlahkan 1 sampai 5 dengan loop?
+Jawab: karena 1 + 2 + 3 + 4 + 5 = 15
+
+7.	Mengapa total = 0 biasanya ditulis sebelum loop?
+Jawab: Karena total digunakan sebagai penampung hasil penjumlahan. Jika diletakkan di dalam loop, nilainya akan terus di-reset menjadi 0 sehingga hasil penjumlahan tidak terkumpul.
+
+8.	Bagaimana seleksi if dapat digunakan di dalam loop?
+Jawab: if dapat digunakan untuk memeriksa setiap nilai yang sedang diproses dan menjalankan perintah tertentu jika kondisi terpenuhi. Contohnya, menghitung hanya bilangan genap:
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(i)
+
+9.	Apa fungsi git commit?
+Jawab: git commit berfungsi untuk menyimpan perubahan yang sudah di-stage ke dalam riwayat Git dengan sebuah pesan commit.
+
+10.	Perintah apa yang mengirim commit terbaru ke GitHub setelah remote tersambung?
+Jawab: git push. Jika push pertama dan branch belum terhubung: git push -u origin main
+
+
